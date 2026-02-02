@@ -1,0 +1,17 @@
+/* Para telas até 320px */
+/* HEADER */
+.header {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.header__logo {
+  width: 188px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 544px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

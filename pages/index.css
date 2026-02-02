@@ -5,7 +5,5 @@
 @import url("../blocks/header.css");
 @import url("../blocks/footer.css");
 @import url("../blocks/page.css");
-
-@import url("../pages/header.css");
-@import url("../pages/section.css");
-@import url("../pages/footer.css");
+@import url("../blocks/intro.css");
+@import url("../blocks/lead.css");
