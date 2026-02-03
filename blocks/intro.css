@@ -27,7 +27,37 @@
 }
 
 @media screen and (min-width: 544px) and (max-width: 1024px) {
+  /* SÓ PRECISA ARRUMAR O TAMANHO DOS TEXTOS E DOS MAX-WIDTH */
+  .intro__title {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 37px auto 24px;
+    padding: 0 24px;
+  }
+
+  .intro__text {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    padding: 0 24px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  /* SÓ PRECISA ARRUMAR O TAMANHO DOS TEXTOS E DOS MAX-WIDTH */
+  .intro__title {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 302px auto 142px;
+    margin-bottom: 40px;
+  }
+
+  .intro__text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 410px auto 148px;
+    padding: 0 24px;
+  }
 }

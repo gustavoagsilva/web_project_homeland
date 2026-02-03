@@ -14,7 +14,27 @@
 }
 
 @media screen and (min-width: 544px) and (max-width: 1024px) {
+  /* SÓ PRECISA ARRUMAR O TAMANHO DOS TEXTOS E DOS MAX-WIDTH */
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+
+    width: 166px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  /* SÓ PRECISA ARRUMAR O TAMANHO DOS TEXTOS E DOS MAX-WIDTH */
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+
+    width: 166px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
