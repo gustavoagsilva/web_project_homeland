@@ -97,6 +97,11 @@
 }
 
 @media screen and (min-width: 544px) {
+  .places {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
   .place {
     margin: 0 24px;
     grid-template-columns: 340px 1fr;
@@ -105,6 +110,7 @@
       "title website"
       "image paragraph"
       "button paragraph";
+    gap: 28px;
   }
 
   .place__title,
@@ -112,7 +118,41 @@
   .place__texts {
     padding: 0;
   }
+
+  .place__title {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 0%;
+  }
+
+  .place__website_url-heading {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+  }
+
+  .place__website_artist {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
+
+  .place__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0%;
+  }
+
+  .place__button {
+    max-width: 355px;
+  }
 }
+
 @media screen and (min-width: 1024px) {
   .places {
     max-width: 984px;
