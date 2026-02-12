@@ -1,39 +1,18 @@
 /* Para telas até 320px */
 .photo-grid {
   display: grid;
-  width: 288px;
-  top: 1486px;
   margin: auto;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   gap: 12px;
+  padding: 0 16px;
 }
 
-@media screen and (min-width: 544px) and (max-width: 1024px) {
+@media screen and (min-width: 544px) {
   .photo-grid {
-    display: grid;
-    width: 720px;
-    top: 1595px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    gap: 12px;
-    left: 48px;
-    place-items: center;
     padding: 0 24px;
   }
 
   .photo-grid__item {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .photo-grid {
-    display: grid;
-    width: 1184px;
-    top: 1869px;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 12px;
   }
 }
