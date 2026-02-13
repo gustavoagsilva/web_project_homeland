@@ -1,0 +1,186 @@
+.place {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "website"
+        "image"
+        "paragraph"
+        "button";
+}
+
+.place__texts {
+    grid-area: paragraph;
+    padding: 0 16px;
+}
+
+.place__image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+    grid-area: image;
+    display: block;
+}
+
+.place__title {
+    font-weight: 900px;
+    line-height: 1.09;
+    font-size: 32px;
+    color: #ffffff;
+    grid-area: title;
+    padding: 0 16px;
+    align-self: end;
+}
+
+.place__website-artist {
+    margin: 0;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.place__website {
+    grid-area: website;
+    padding: 0 16px;
+    align-self: end;
+}
+
+.palc {
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.place__paragraph {
+    margin-top: 0;
+    display: flex;
+    text-align: justify;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.place__button {
+    max-width: 288px;
+    height: 48px;
+    margin: 0 16px;
+    margin-top: 30px;
+    grid-area: button;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, #0278fe, #003a7b);
+    border: 2px solid #2f80ed;
+    border-radius: 6px;
+}
+
+.place__button:hover {
+    background: linear-gradient(90deg, #1c4fd8, #2f80ed);
+    transform: translateY(-2px);
+}
+
+.place__button-paragraph {
+    max-width: 245px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 544px) {
+    .place {
+        margin: 0 24px;
+        grid-template-columns: 340px 1fr;
+        grid-template-rows: 1fr 340px;
+        grid-template-areas:
+            "title website"
+            "image paragraph"
+            "button paragraph";
+        gap: 28px;
+    }
+
+    .place__title,
+    .place__website,
+    .place__texts {
+        padding: 0;
+    }
+
+    .place__title {
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0%;
+    }
+
+    .place__website-heading {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 12%;
+        text-transform: uppercase;
+    }
+
+    .place__website-artist {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .place__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+        letter-spacing: 0%;
+    }
+
+    .place__button {
+        max-width: 355px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .place {
+        grid-template-columns: 460px 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 40px;
+    }
+
+    .place__paragraph {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163%;
+        letter-spacing: 0%;
+    }
+
+    .place__title {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 76px;
+        letter-spacing: 0%;
+    }
+
+    .place__website-heading {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 12%;
+        text-transform: uppercase;
+    }
+
+    .place__website-artist {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .place__button {
+        max-width: 356.08px;
+    }
+}
