@@ -158,6 +158,7 @@
     max-width: 984px;
     margin: 0 auto;
   }
+
   .place {
     grid-template-columns: 460px 1fr;
     grid-template-rows: auto auto 1fr;
